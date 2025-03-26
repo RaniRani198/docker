@@ -1,0 +1,19 @@
+Docker Project:
+1: Create  a folder as Docker on desktop and opened with visual Studio
+2. Create app.py file and requirement.txt  and save them
+3. Later created docker by adding all dependencies  in it save entire folder
+4. open PowerShell and run docker --version  command  and later  cd 'C:\Users\...' command and later ls command later  docker info command
+5. Run this command docker build -t simple-flask-app . 
+ Output: View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ng
+6. Finally, Run this command docker run -p 5000:5000 simple-flask-app
+Output : Running on http://127.0.0.1:5000
+
+Later Push the Image to Docker Hub
+ Run this command one by one in PowerShell
+  1. docker login
+  2. docker tag simple-flask-app docker login username /simple-flask-app
+  3. docker push docker login username/simple-flask-app
+
+Now in Docker Desktop you will see the container running and shows images
+Finally stop container(docker stop container id) that it... Done
+ 
